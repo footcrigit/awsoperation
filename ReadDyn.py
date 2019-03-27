@@ -27,12 +27,11 @@ class ReadfromDynamo(Resource):
 
             dynamodb = boto3.resource("dynamodb", 
                                 region_name='us-east-2', 
-                                aws_access_key_id= "AKIAJKXKJBCMRDJ65I2A",
-                                aws_secret_access_key= "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",
+                                aws_access_key_id= "anything",
+                                aws_secret_access_key= "anything",
                                 endpoint_url="http://dynamodb.us-east-2.amazonaws.com")
 
         table = dynamodb.Table('MovieDetails')
-        #hello subhransu
         title = "quantum of solace"
         Movieid = 1
 
